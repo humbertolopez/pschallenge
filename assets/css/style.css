@@ -1,0 +1,39 @@
+body {
+    @apply bg-graybg mt-11;
+}
+header, .ps-body {
+    @apply container mx-auto block overflow-hidden p-14 bg-graybg-dark;
+}
+header {
+    @apply rounded-t-3xl border-b-2 border-graybg-secondary
+}
+.ps-body {
+    @apply rounded-b-3xl;
+}
+#gif-grid {
+    @apply grid grid-cols-6 gap-2;
+}
+.gif-item {
+    @apply overflow-hidden relative justify-center content-center;
+}
+.gif-item-img {
+    @apply min-w-full min-h-full object-cover;
+}
+#single-gif-body {
+    @apply grid grid-cols-4 gap-8 text-white;
+}
+#single-gif-body h2 {
+    @apply font-bold text-xl;
+}
+#single-gif-body h3 {
+    @apply font-bold;
+}
+.gif-main {
+    @apply col-span-2;
+}
+.gif-info-list {
+    @apply text-sm;
+}
+.user-description, .user-social-links {
+    @apply text-sm my-2;
+}

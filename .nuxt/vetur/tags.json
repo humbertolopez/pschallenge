@@ -1,0 +1,11 @@
+{
+  "Header": {
+    "description": "Auto imported from components/Header.vue"
+  },
+  "SocialHead": {
+    "description": "Auto imported from components/SocialHead.vue"
+  },
+  "UserInfo": {
+    "description": "Auto imported from components/UserInfo.vue"
+  }
+}

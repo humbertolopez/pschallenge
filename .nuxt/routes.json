@@ -1,0 +1,16 @@
+[
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/var/www/html/pschallenge/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_6e1f4885"
+  },
+  {
+    "name": "id",
+    "path": "/:id",
+    "component": "/var/www/html/pschallenge/pages/_id.vue",
+    "chunkName": "pages/_id",
+    "_name": "_1f7fa82d"
+  }
+]
