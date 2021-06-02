@@ -19,7 +19,7 @@ If you want to clone this repo and have fun with it at your local enviroment, th
 
 1. Clone this project.
 
-    git clone git@github.com:humbertolopez/pschallenge.git
+    `git clone git@github.com:humbertolopez/pschallenge.git`
 
 2. Install the project.
 
@@ -30,6 +30,6 @@ Navigate to the project's folder and start it up.
 
 3. Run and enjoy!
 
-    npm run dev
+    `npm run dev`
 
 Now, the site is running at `http://localhost:3000`
