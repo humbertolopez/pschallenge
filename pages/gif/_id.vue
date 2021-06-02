@@ -20,6 +20,7 @@
             </div>
             <GifInfo
                 :images="images"
+                :url="url"
             />
         </div>
     </section>

@@ -23,7 +23,7 @@ a:hover {
     @apply min-w-full min-h-full object-cover;
 }
 #single-gif-body {
-    @apply grid grid-cols-4 gap-8 text-white;
+    @apply grid grid-cols-2 xl:grid-cols-4 gap-8 text-white;
 }
 h2 {
     @apply font-bold text-xl;
@@ -35,13 +35,16 @@ h2 {
     @apply font-bold;
 }
 .gif-main {
-    @apply col-span-2;
+    @apply col-span-2 order-1 lg:order-2;
 }
 .gif-info {
-    @apply mt-12;
+    @apply mt-12 order-4;
+}
+.user-info {
+    @apply order-3 lg:order-1;
 }
 .gif-info-list {
-    @apply text-sm;
+    @apply text-sm mb-3;
 }
 .user-description, .user-social-links {
     @apply text-sm my-2;
@@ -72,4 +75,19 @@ h2 {
 }
 .loading-text {
     @apply text-white font-bold text-xl animate-pulse text-center;
+}
+.tocopy {
+    @apply text-graybg-secondary rounded-l-md p-2 flex-grow;
+}
+.input-group {
+    @apply flex mt-4;
+}
+#copybutton {
+    @apply flex-shrink-0 p-2 rounded-r-md bg-graybg text-white;
+}
+.copied-alert {
+    @apply mt-4 text-green-500;
+}
+.copied-alert-failed {
+    @apply mt-4 text-red-500;
 }
