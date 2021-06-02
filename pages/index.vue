@@ -1,14 +1,17 @@
 <template>
     <section class="ps-body">
         <div v-if="searchdata.search">
-            <h1 class="search-title">{{searchdata.search}}</h1><span>{{gifs.pagination}}</span>
+            <h1 class="search-title">{{searchdata.search}}</h1>
+        </div>
+        <div v-else>
+            <h1 class="search-title">Top 12 trending GIFs today</h1>
         </div>
         <div id="gif-grid">
             <div v-if="$fetchState.pending">
                 <p class="loading-text">Here comes the GIFs...</p>
             </div>
             <div v-for="gif in gifs" class="gif-item">
-                <NuxtLink :to="gif.id">
+                <NuxtLink :to="`gif/${gif.id}`">
                     <img :src="gif.images.fixed_width_downsampled.url" class="gif-item-img">
                 </NuxtLink>
             </div>
@@ -36,14 +39,13 @@ export default {
         if(this.$route.query.search){
             const searchquery = this.$route.query.search
             const searchcall = await fetch(
-                api_url+'search?q='+searchquery+'&api_key='+api_key
+                api_url+'search?q='+searchquery+'&api_key='+api_key+'&limit=48'
             ).then(res => res.json())
             this.gifs = searchcall.data
             this.searchdata = this.$route.query
         } else {
-            this.cleanBoard()
             const gifscall = await fetch(
-            'http://localhost:3000/_content/response'
+                api_url+'trending?api_key='+api_key+'&limit=12'
             ).then(res => res.json())
             this.gifs = gifscall.data
         }

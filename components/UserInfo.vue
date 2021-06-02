@@ -1,6 +1,13 @@
 <template>
     <div class="user-info">
-        <h3><a :href="user.profile_url">{{user.username}}</a></h3>
+        <div class="flex">
+            <div class="w-12 flex-shrink-0">
+                <img :src="user.avatar_url">
+            </div>
+            <div class="ml-2">
+                <h3><a :href="user.profile_url">{{user.username}}</a></h3>
+            </div>
+        </div>
         <p v-if="user.description" class="user-description">{{user.description}}</p>
         <h3>Social links</h3>
         <ul class="user-social-links">

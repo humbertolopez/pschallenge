@@ -11,10 +11,10 @@ a:hover {
     @apply underline;
 }
 .ps-body {
-    @apply rounded-b-3xl;
+    @apply rounded-b-3xl mb-11;
 }
 #gif-grid {
-    @apply grid grid-cols-6 gap-2 text-white;
+    @apply grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-2 text-white;
 }
 .gif-item {
     @apply overflow-hidden relative justify-center content-center bg-graybg-secondary;
@@ -65,7 +65,7 @@ h2 {
     @apply inline-block;
 }
 .head-medium-area {
-    @apply place-content-center text-gray-700 col-span-4 text-center place-content-center;
+    @apply place-content-center text-gray-700 col-span-4 text-center;
 }
 .search-a {
     @apply cursor-pointer;
