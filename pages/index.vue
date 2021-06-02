@@ -3,8 +3,13 @@
         <div v-if="searchdata.search">
             <h1 class="search-title">{{searchdata.search}}</h1>
         </div>
-        <div v-else>
-            <h1 class="search-title">Top 12 trending GIFs today</h1>
+        <div v-else class="block overflow-hidden">
+            <div class="w-2/4 float-left">
+                <h1 class="search-title">Top 12 trending GIFs now</h1>
+            </div>
+            <div class="w-2/4 float-right text-right text-white">
+                <p><NuxtLink to="trending">See all trending GIFs</NuxtLink></p>
+            </div>
         </div>
         <div id="gif-grid">
             <div v-if="$fetchState.pending">
