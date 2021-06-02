@@ -1,6 +1,12 @@
 {
+  "GifInfo": {
+    "description": "Auto imported from components/GifInfo.vue"
+  },
   "Header": {
     "description": "Auto imported from components/Header.vue"
+  },
+  "SearchLightbox": {
+    "description": "Auto imported from components/SearchLightbox.vue"
   },
   "SocialHead": {
     "description": "Auto imported from components/SocialHead.vue"

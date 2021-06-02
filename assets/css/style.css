@@ -5,16 +5,19 @@ header, .ps-body {
     @apply container mx-auto block overflow-hidden p-14 bg-graybg-dark;
 }
 header {
-    @apply rounded-t-3xl border-b-2 border-graybg-secondary
+    @apply rounded-t-3xl border-b-2 border-graybg-secondary grid grid-cols-6;
+}
+a:hover {
+    @apply underline;
 }
 .ps-body {
     @apply rounded-b-3xl;
 }
 #gif-grid {
-    @apply grid grid-cols-6 gap-2;
+    @apply grid grid-cols-6 gap-2 text-white;
 }
 .gif-item {
-    @apply overflow-hidden relative justify-center content-center;
+    @apply overflow-hidden relative justify-center content-center bg-graybg-secondary;
 }
 .gif-item-img {
     @apply min-w-full min-h-full object-cover;
@@ -22,8 +25,11 @@ header {
 #single-gif-body {
     @apply grid grid-cols-4 gap-8 text-white;
 }
-#single-gif-body h2 {
+h2 {
     @apply font-bold text-xl;
+}
+.search-title {
+    @apply mb-5 text-white text-2xl font-bold;
 }
 #single-gif-body h3 {
     @apply font-bold;
@@ -31,9 +37,39 @@ header {
 .gif-main {
     @apply col-span-2;
 }
+.gif-info {
+    @apply mt-12;
+}
 .gif-info-list {
     @apply text-sm;
 }
 .user-description, .user-social-links {
     @apply text-sm my-2;
+}
+#gif-item-mp4 {
+    @apply mt-5;
+}
+#gif-item-mp4 video {
+    @apply w-full h-auto;
+}
+#search-lightbox {
+    @apply fixed inset-0 bg-black bg-opacity-90 z-20;
+}
+.search-box-container {
+    @apply mx-auto overflow-hidden fixed top-48 w-2/4 left-1/4 z-30;
+}
+#search-box-input {
+    @apply h-24 w-full py-12 px-6 rounded-lg text-3xl;
+}
+.head-logo, .head-medium-area {
+    @apply inline-block;
+}
+.head-medium-area {
+    @apply place-content-center text-gray-700 col-span-4 text-center place-content-center;
+}
+.search-a {
+    @apply cursor-pointer;
+}
+.loading-text {
+    @apply text-white font-bold text-xl animate-pulse text-center;
 }

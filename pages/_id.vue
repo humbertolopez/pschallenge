@@ -14,14 +14,13 @@
             </div>
             <div class="gif-main">
                 <h2><a :href="url">{{title}}</a></h2>
+                <div id="gif-item-mp4">
+                    <video :alt="title" :src="images.original.mp4" autoplay loop playsinline></video>
+                </div>
             </div>
-            <div class="gif-info">
-                <ul class="gif-info-list">
-                    <li>Width: {{images.original.width}}</li>
-                    <li>Height: {{images.original.height}}</li>
-                    <li>Frames: {{images.original.frames}}</li>
-                </ul>
-            </div>
+            <GifInfo
+                :images="images"
+            />
         </div>
     </section>
 </template>
@@ -31,7 +30,7 @@ import {api_key,api_url,title} from '~/conf/conf'
 export default {
     head(gif){
         return {
-            title: title+' ─ '+gif.title
+            title: gif.title+' ─ '+title
         }
     },
     async asyncData({params}){
