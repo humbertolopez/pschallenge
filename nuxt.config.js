@@ -5,6 +5,9 @@ export default {
         '@nuxtjs/tailwindcss',
         '@nuxt/content'
     ],
+    buildModules: [
+        '@nuxtjs/dotenv'
+    ],
     css: [
         '~/assets/css/style.css',
     ]
