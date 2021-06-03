@@ -29,6 +29,11 @@
 import {api_key,api_url,title} from '~/conf/conf'
 
 export default {
+    data() {
+        return {
+            user: null
+        }
+    },
     head(gif){
         return {
             title: gif.title+' ─ '+title
