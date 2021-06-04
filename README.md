@@ -32,7 +32,13 @@ cd pschallenge
 npm install
 ```
 
-3. Run and enjoy!
+3. Create a new file named `.env` on the root of your project with your APIKEY
+
+```
+APIKEY=<insert your apikey>
+```
+
+4. Run and enjoy!
 
 ```
 npm run dev
