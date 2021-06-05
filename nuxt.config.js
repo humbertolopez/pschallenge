@@ -3,7 +3,6 @@ export default {
     modules: [
         '@nuxt/http',
         '@nuxtjs/tailwindcss',
-        '@nuxt/content'
     ],
     buildModules: [
         '@nuxtjs/dotenv'

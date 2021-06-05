@@ -7,7 +7,7 @@
             <div v-if="$fetchState.pending">
                 <p class="loading-text">Here comes the GIFs...</p>
             </div>
-            <div v-for="gif in gifs" class="gif-item">
+            <div v-for="gif in gifs" class="gif-item" :key="gif.id">
                 <NuxtLink :to="`gif/${gif.id}`">
                     <img :src="gif.images.fixed_width_downsampled.url" class="gif-item-img">
                 </NuxtLink>
